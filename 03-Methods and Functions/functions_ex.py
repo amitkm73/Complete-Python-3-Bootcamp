@@ -1,8 +1,3 @@
-def ex1():
-    print('hi')
-    return
-
-
 def has_33(nums):
     """
     :param nums: list of ints
@@ -24,8 +19,7 @@ def paper_doll(text):
     """
     ext_str = ''
     for char in text:
-        for i in range(0, 3):
-            ext_str += char
+        ext_str += char * 3
     return ext_str
 
 
@@ -40,10 +34,10 @@ def blackjack(a, b, c):
         return 'Error'
     if (a > 11) or (b > 11) or (c > 11):
         return 'Error'
-    card_sum = a + b + c
+    card_sum = sum((a, b, c))
     if card_sum <= 21:
         return card_sum
-    if a == 11 or b == 11 or c == 11:
+    if 11 in (a, b, c):
         card_sum -= 10
     if card_sum > 21:
         return 'BUST'
