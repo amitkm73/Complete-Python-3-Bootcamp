@@ -1,5 +1,3 @@
-import math
-
 def ex1():
     print('hi')
     return
