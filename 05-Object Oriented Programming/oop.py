@@ -1,3 +1,5 @@
+# very basic oop challenge - classes implementations
+
 import math
 
 
@@ -43,4 +45,4 @@ class Account:
             self.balance -= amount
             print(f'withrawal of {amount} accepted; new balance = {self.balance}')
         else:
-            print(f'withrawal of {amount } rejected; balance = {self.balance}')
+            print(f'withrawal of {amount} rejected; balance = {self.balance}')
