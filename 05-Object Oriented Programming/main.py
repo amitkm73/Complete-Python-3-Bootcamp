@@ -1,4 +1,6 @@
 # scratchpad for python bootcamp
+# very basic oop challenge - simple tests
+
 from oop import *
 
 
