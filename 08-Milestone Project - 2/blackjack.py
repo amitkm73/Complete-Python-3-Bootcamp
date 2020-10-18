@@ -154,6 +154,8 @@ class Dealer(Player):
 class BlackjackGame:
     """
     blackjack game with players, deck of cards, bets, multiple rounds, etc.
+    in this flavor of blackjack dealer's hand is visible to all players
+    in each round each player can hit or stay, until all stay or there's a winner
     warning: players can get into debt
     """
     def __init__(self):
